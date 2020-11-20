@@ -1,0 +1,7 @@
+<a name="{{ person.firstName }}{{ person.lastName }}"></a>
+<div>
+    <p>Nome: {{ person.firstName }}</p>
+    <p>Cognome: {{ person.lastName }}</p>
+    <p><button (click)="doOnClick($event)" class="btn btn-danger">Cancella {{ person.firstName }}
+            {{ person.lastName }}</button></p>
+</div>

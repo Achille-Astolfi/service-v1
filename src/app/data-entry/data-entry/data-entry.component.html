@@ -1,0 +1,13 @@
+<form (submit)="doOnSubmit($event)" autocomplete="off">
+    <p>
+        <label for="first">Nome:</label><br />
+        <input type="text" name="first" id="first" [(ngModel)]="dataEntryForm.first" placeholder="Il nome da inserire">
+    </p>
+    <p>
+        <label for="last">Cognome:</label><br />
+        <input type="text" name="last" id="last" [(ngModel)]="dataEntryForm.last" placeholder="Il cognome da inserire">
+    </p>
+    <p>
+        <button type="submit" class="btn btn-primary">Salva</button>
+    </p>
+</form>

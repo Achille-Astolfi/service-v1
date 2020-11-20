@@ -1,0 +1,5 @@
+<a *ngIf="personService.persons.length !== 0" routerLink="." [fragment]="lastPersonHash()">Scroll all'ultimo elemento</a>
+<app-person-list-item *ngFor="let person of personService.persons" [person]="person"></app-person-list-item>
+<div *ngIf="personService.persons.length === 0">
+    <p>Non ci sono persone da visualizzare. Clicca su <a routerLink="../data-entry">Data Entry</a> per inserire qualche nome.</p>
+</div>
