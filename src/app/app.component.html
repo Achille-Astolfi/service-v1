@@ -12,11 +12,17 @@
         <li class="nav-item" routerLinkActive="active bg-danger">
           <a class="nav-link" routerLink="home">Home</a>
         </li>
-        <li class="nav-item" routerLinkActive="active bg-success">
+        <li class="nav-item" routerLinkActive="active bg-success" *ngIf="authService.isUser()">
           <a class="nav-link" routerLink="data-entry">Data Entry</a>
         </li>
-        <li class="nav-item" routerLinkActive="active bg-info">
+        <li class="nav-item" routerLinkActive="active bg-info" *ngIf="authService.isAdmin()">
           <a class="nav-link" routerLink="person-list">Person List</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active bg-warning">
+          <a class="nav-link" routerLink="login">Login</a>
+        </li>
+        <li class="nav-item" *ngIf ="authService.roles.length >0">
+          <a class="nav-link" href="/logout" (click)="doLogout($event)">Logout</a>
         </li>
       </ul>
     </div>
