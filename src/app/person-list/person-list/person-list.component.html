@@ -1,0 +1,4 @@
+<app-person-list-item *ngFor="let person of personService.persons" [person]="person"></app-person-list-item>
+<div>
+    <p *ngIf="personService.persons.length === 0">Person List vuota. Clicca su <a [routerLink]="['../data-entry']">Data Entry</a> per poter aggiungere persone</p>
+</div>
