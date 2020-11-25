@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "service-v1"
+  "defaultProject": "service-v1",
+  "cli": {
+    "analytics": "a2c4edec-7ea7-4ca1-9651-2bf2edff9c8f"
+  }
 }
