@@ -1,6 +1,6 @@
 <header>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" routerLink="">
       <img src="/assets/dot.svg" class="align-baseline" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -9,14 +9,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+        <li class="nav-item" routerLinkActive="active bg-danger">
+          <a class="nav-link" routerLink="home">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Menu 1</a>
+        <li class="nav-item" routerLinkActive="active bg-success">
+          <a class="nav-link" routerLink="data-entry">Data Entry</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Menu 2</a>
+        <li class="nav-item" routerLinkActive="active bg-info">
+          <a class="nav-link" routerLink="person-list">Person List</a>
         </li>
       </ul>
     </div>
@@ -26,15 +26,6 @@
   <div class="container">
     <router-outlet>
     </router-outlet>
-
-    <!-- TO BE DELETED BEGIN -->
-    <h1>Service V1 Works!</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cupiditate neque fugit deserunt, itaque
-      obcaecati
-      laudantium? Culpa facere necessitatibus numquam voluptas quidem? Minus, vero fugiat facere praesentium quas qui
-      voluptates?</p>
-    <!-- TO BE DELETED END -->
-
   </div>
 </main>
 <footer class="bg-dark text-light">
