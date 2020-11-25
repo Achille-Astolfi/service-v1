@@ -1,0 +1,11 @@
+
+<h1>Inserisci le tue crendeziali</h1>
+<form ngNativeValidate (submit) = "formOnSubmit($event)">
+    <p><label>Username: </label><input type="text" name="username" [(ngModel)]="template.username" 
+        placeholder="User o Admin" id="username" required></p>
+   
+    <p><label>Password: </label><input [type]="passwordType" name="password" [(ngModel)]="template.password" 
+        placeholder="Password" id="password" required><button type="button" (click)="doShowHide($event)">{{ buttonLabel() }}</button></p>
+
+    <p><button type="submit" class = "btn btn-primary" [disabled]="formDisabled || !validForm()">Login</button></p>
+</form>
